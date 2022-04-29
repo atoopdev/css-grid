@@ -1,0 +1,15 @@
+/* takes content size, padding, and border into account when determing size of content */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 0.75rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
