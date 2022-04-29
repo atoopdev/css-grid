@@ -1,0 +1,35 @@
+html, body{
+    margin: o;
+    padding: 0;
+}
+
+body{
+    /* remember - no collapsing margins so spacing will be wider */
+    /* display: grid; */
+    /* makes 3 cols 300, 100px wide */
+    /* will automatically create new rows */
+    /* grid-template-columns: 300px 100px 100px 200px; */
+    /* define height of two rows */
+    /* grid-template-rows: 750px 500px; */
+}
+
+.grid {
+    display: grid;
+    grid-template: 100px 100px 100px / 200px 200px 200px;
+  }
+  
+  .grid-item {
+    background: #B823C1;
+    color: white;
+    padding: 1em 2em;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* will stretch across 3 cols */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* moves div down one row */
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
