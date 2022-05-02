@@ -101,7 +101,7 @@ body {
 @media (min-width: 500px) {
   .card {
     /* rows/cols */
-    grid-template: 1em 75px auto 100px 1em / 250px 1em auto auto 1em;
+    grid-template: 1em 75px auto 150px 1em / 250px 1em auto auto 1em;
   }
   .card-img {
     grid-column: 1;
@@ -111,7 +111,7 @@ body {
   .card-title {
     grid-column: 3;
     grid-row: 2;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 2.25rem;
   }
 
@@ -119,13 +119,13 @@ body {
     grid-column: 3;
     grid-row: 3;
     font-size: 1.125rem;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 
   .card-read-time,
   .card-btn {
     grid-column: 3;
     grid-row: 4;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
   }
 }
