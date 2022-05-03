@@ -41,9 +41,12 @@
   background: #ff5670;
 }
 
+/* large screen */
+
 @media (min-width: 600px) {
   .grid {
-    grid-template-columns: 100px 300px 100px;
+    /* use minmax values to set min and max sizes */
+    grid-template-columns: 100px minmax(200px, 1000px) minmax(100px, 200px) 100px;
     grid-template-areas:
       "header header header header"
       ". content sidebar ."
