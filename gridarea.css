@@ -1,11 +1,12 @@
 .grid {
   display: grid;
   /* define columns */
-  grid-template-columns: 150px 150px 200px;
+  grid-template-columns: 5em auto 5em;
   /* assign columns */
   grid-template-areas:
+  /* use "." anywhere you want to be blank. Useful for mobile layouts */
     "header header header"
-    "sidebar content content"
+    ". content ."
     "footer footer footer";
 }
 
@@ -38,4 +39,14 @@
 .big {
   padding: 3em 2em;
   background: #ff5670;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 100px 300px 100px;
+    grid-template-areas:
+      "header header header header"
+      ". content sidebar ."
+      "footer footer footer footer";
+  }
 }
